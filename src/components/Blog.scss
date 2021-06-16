@@ -1,0 +1,14 @@
+.blog {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 1000px;
+
+	.posts {
+		display: flex;
+		flex-direction: column;
+		min-width: 600px;
+		width: 600px;
+		min-height: 300px;
+	}
+}

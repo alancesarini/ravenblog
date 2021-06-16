@@ -1,0 +1,94 @@
+@import 'variables';
+
+body {
+	background-color: $dark-body-background;
+}
+
+.dark-theme {
+	background-color: $dark-body-background;
+
+	p,
+	span,
+	li,
+	button {
+		font-family: 'Roboto', sans-serif;
+		color: $dark-secondary-font-color;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: 'Montserrat', sans-serif;
+		color: $dark-main-font-color;
+	}
+
+	button {
+		background: transparent;
+		border: none;
+		text-align: left;
+		color: $dark-link-color;
+
+		i,
+		span {
+			color: inherit;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	a {
+		color: $dark-link-color;
+		text-decoration: none;
+
+		h3 {
+			color: inherit;
+		}
+	}
+
+	em {
+		color: $dark-accent-color;
+	}
+
+	.card {
+		background-color: $dark-card-background;
+		border-color: $dark-border-color;
+	}
+
+	.title {
+		border-color: $dark-accent-color;
+	}
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card {
+	display: block;
+	top: 0;
+	position: relative;
+	border-radius: 4px;
+	padding: 32px 24px;
+	text-decoration: none;
+	z-index: 0;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+
+.title {
+	border-left: 3px solid #000;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+.title-with-action {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

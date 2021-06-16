@@ -1,0 +1,32 @@
+@import '../variables';
+
+.post {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	position: relative;
+
+	h3 {
+		margin: 0;
+	}
+
+	button {
+		color: $dark-link-color;
+		float: right;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	.comments {
+		display: flex;
+		flex-direction: column;
+
+		.comment-list {
+			transition: height 0.5s;
+		}
+	}
+}
